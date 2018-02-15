@@ -1,0 +1,11 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	color: red;
+	font-family: 'Roboto', sans-serif;
+}
+.content_wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: green;
+}
