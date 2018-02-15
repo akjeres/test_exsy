@@ -7,18 +7,60 @@
 	<title>Test | Exsy</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="content_wrapper">
-		<div class="test"></div>
+		<header>
+			<div class="header_menu"></div>
+			<div class="header_carousel">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active" id="first-slide">
+				      <img class="d-block w-100" src="images/slide_0.png" alt="First slide">
+				    </div>
+				    <div class="carousel-item" id="second-slide">
+				      <img class="d-block w-100" src="images/slide_1.png" alt="Second slide">
+				    </div>
+				    <div class="carousel-item" id="third-slide">
+				      <img class="d-block w-100" src="images/slide_2.png" alt="Third slide">
+				    </div>
+				  </div>
+				 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			<div class="header_modal"></div>
+			<div class="clear"></div>
+		</header>
+		<main>
+			<div></div>
+			<div class="map_wrapper">
+				<div id="map"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</main>
+		<footer>
+			<p>&copy;&nbsp;2015,&nbsp;Copyright</p>
+		</footer>
 	</div>
+	<div class="test"></div>
 	<script src="js/jquery.min.js"></script>
     <!-- jQuery Color added -->
     <!--<script src="js/jquery.color-2.1.2.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
     <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDer5sS1_YYmQPF0JM9sX5YpQebdGwF7sE&callback=initMap">
+    </script>
 </body>
 </html>
