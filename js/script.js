@@ -101,7 +101,6 @@ function menuAnimate() {
 }
 
 function paddingSet() {
-	console.log(1);
 	let main_offset = $("p.address_paragraph").offset().left;
 	$("#manufacturing h2").css({
 		paddingLeft: main_offset + "px"
