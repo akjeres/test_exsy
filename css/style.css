@@ -56,6 +56,9 @@ button#request_call {
 	width: 245px;
 	border: 0;
 	color: #fdbe0f;
+	-webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	-ms-border-radius: 45px;
 	border-radius: 45px;
 	position: relative;
 	top: 34px;
@@ -217,6 +220,9 @@ main h2 {
 	margin: 0 0 48px 0;
 	/*padding: 83px 0 21px 18.65%;*/
 	padding: 83px 0 21px 19.25%;
+	-webkit-display: inline-block;
+	-ms-display: inline-block;
+	display: -moz-inline-stack;
 	display: inline-block;
 	border-bottom: 4px solid #ffea00;
 	text-align: left;
