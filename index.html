@@ -9,21 +9,44 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<div class="content_wrapper">
+<body id = "outter">
+	<div class="content_wrapper" id="inner">
 		<header>
-			<div class="header_menu"></div>
+			<div class="header_menu">
+				<div class="nav_menu_wrapper">
+					<nav class="navbar navbar-expand-md navbar-light bg-transparent" id="navbar_nav">
+					  <a class="navbar-brand smooth_link" href="#inner">
+					  	<img class="header_logo" src="images/logo.png" alt="Богдановский Карьер Logo">
+					  </a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					    <ul class="navbar-nav">
+					      <li class="nav-item">
+					        <a class="nav-link manufacturing smooth_link" href="#manufacturing">Производство</a>
+					      </li>
+					      <li class="nav-item nav-item-span">|</li>
+					      <li class="nav-item last">
+					        <a class="nav-link address smooth_link" href="#address">Адрес карьера</a>
+					        <button class="btn btn-default" type="button" data-toggle="modal" data-target="#exampleModal" id="request_call">Заказать звонок</button>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+				</div>
+			</div>
 			<div class="header_carousel">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				  <div class="carousel-inner">
 				    <div class="carousel-item active" id="first-slide">
-				      <img class="d-block w-100" src="images/slide_0.png" alt="First slide">
+				      <img class="d-block w-100" src="images/slide_0.png" alt="Ore Embarkation Image (Blured)">
 				    </div>
 				    <div class="carousel-item" id="second-slide">
-				      <img class="d-block w-100" src="images/slide_1.png" alt="Second slide">
+				      <img class="d-block w-100" src="images/slide_1.png" alt="Truck with Ore Image (Blured)">
 				    </div>
 				    <div class="carousel-item" id="third-slide">
-				      <img class="d-block w-100" src="images/slide_2.png" alt="Third slide">
+				      <img class="d-block w-100" src="images/slide_2.png" alt="Ore Embarkation Image (Clear)">
 				    </div>
 				  </div>
 				 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -36,28 +59,76 @@
 				  </a>
 				</div>
 			</div>
-			<div class="header_modal"></div>
+			<div class="header_modal">
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <img class="modal-title" id="exampleModalLabel" src="images/logo.png" alt="Богдановский Карьер Logo" title="Богдановский Карьер" />
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        Тест
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
 			<div class="clear"></div>
 		</header>
 		<main>
-			<div></div>
+			<div class="info_wrapper">
+				<div class="container">
+				<div class="description_row row">
+						<div class="manufacturing_wrapper col-lg-8 col-md-9" id="manufacturing">
+							<h2 class="manufacturing_title title" >
+								Производим и продаем щебень
+							</h2>
+							<p>Площадь участка 96,1 га. Щебень и гравий из плотных пород для строительных работ. Прочность соответ&shy;ствует марке 800 (ДР-12). Запасы по гравию 28 %. Пески и пески-отсевы Богдановского-2 участка могут быть использованы в качестве строительного и дорожного материала. Мощность толщи 12-22,1 метра. Уровень грунтовых вод расположен ниже подошвы полезной толщи. Концентрация радионуклидов соответствует 1 классу СП 2.6.1.758-99.</p>
+							<p><strong>Щебень 20×40</strong> пригоден в производстве бетона и изготовлении конструкций из него, для дорожного строи&shy;тельства при закладке фундамента зданий, при возведении производственных всех видов сооружений и др.</p>
+						</div>
+						<div class="phones_wrapper col-lg-4 col-md-3" id="phones">
+							<h2 class="phones_title title">
+								Контакты
+							</h2>
+							<ul class="phones-list list-unstyled">
+								<li><b>Звоните:</b></li>
+								<li><a href="tel:+78005559399">8&nbsp;(800)&nbsp;<b>555-93-99</b></a>
+								</li>
+								<li><a href="tel:+74956385585">8&nbsp;(495)&nbsp;<b>638-55-85</b></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="address_wrapper">
+					<h2 class="address_title title" id="address">
+						Адрес карьера
+					</h2>
+					<p class="address_paragraph"><img src="images/map-point.png" alt="Map Point Image">
+						поселок Ханино, <span class="mobile_s"></span>Суворовский район,<span class="mobile_m mobile_s"></span> Тульская область, Россия
+					</p>
+				</div>
+			</div>
 			<div class="map_wrapper">
 				<div id="map"></div>
 				<div class="clear"></div>
 			</div>
-			<div class="clear"></div>
 		</main>
 		<footer>
 			<p>&copy;&nbsp;2015,&nbsp;Copyright</p>
 		</footer>
 	</div>
-	<div class="test"></div>
 	<script src="js/jquery.min.js"></script>
     <!-- jQuery Color added -->
-    <!--<script src="js/jquery.color-2.1.2.min.js"></script>-->
+    <script src="js/jquery.color-2.1.2.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript"></script>
     <script src="js/script.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDer5sS1_YYmQPF0JM9sX5YpQebdGwF7sE&callback=initMap">
