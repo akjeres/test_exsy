@@ -157,6 +157,19 @@ $(".smooth_link").click(function() {
 
     return false;
 });
+$("#exampleModal").on("show.bs.modal", function() {
+	$(".content_wrapper").css({
+		paddingRight: 0,
+		width: ($(window).width() + getScrollbarWidth()) + "px"
+	});
+	//alert($(window).width());
+});
+$("#exampleModal").on("hidden.bs.modal", function() {
+	$(".content_wrapper").css({
+		paddingRight: "",
+		width: ""
+	});
+});
 /*Map*/
 function initMap() {
 		        var uluru = {lat: 54.208089, lng: 36.623343};
